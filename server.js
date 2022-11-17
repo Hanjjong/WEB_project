@@ -4,9 +4,8 @@ const mysql = require('mysql')
 const bodyParser = require('body-parser')
 var router = express.Router()
 app.use(express.static(__dirname + '/public'));
-
-
-
+app.use(express.static(__dirname + '/'));
+app.use('/', router)
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -35,7 +34,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/login', function(req, res){
-  res.render('login.ejs');
+  res.render('login.ejs')
 });
 app.get('/', function(req, res){
   res.render('mypage.ejs');
@@ -46,3 +45,12 @@ app.get('/member', function(req, res){
 app.get('/member', function(req, res){
   res.render('template.ejs');
 });
+
+
+app.get('/notice_list.html', function(req, res){
+  res.sendFile(__dirname+'/board/notice_list.html');
+});
+/*
+app.get('/notice_list.html', function(req, res){
+  res.render('notice_list.html');
+});*/
