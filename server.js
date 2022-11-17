@@ -30,27 +30,29 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 app.get('/', function(req, res){
-  res.render('mainpage.ejs');//res.sendFile(__dirname+'/~.html)
+  res.render('mainpage.ejs');//res.sendFile(__dirname+'/~.html')
 });
 
 app.get('/login', function(req, res){
   res.render('login.ejs')
 });
-app.get('/', function(req, res){
+app.get('/mypage', function(req, res){
   res.render('mypage.ejs');
 });
-app.get('/member', function(req, res){
+app.get('/regist', function(req, res){
   res.render('regist.ejs');
 });
-app.get('/member', function(req, res){
+app.get('/template', function(req, res){
   res.render('template.ejs');
 });
 
 
 app.get('/notice_list.html', function(req, res){
-  res.sendFile(__dirname+'/board/notice_list.html');
+  res.sendFile(__dirname+'/views/notice_list.html');
 });
 /*
 app.get('/notice_list.html', function(req, res){
   res.render('notice_list.html');
 });*/
+
+//html은 sendfile ejs는 render
