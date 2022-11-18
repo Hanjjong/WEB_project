@@ -32,8 +32,8 @@
                         <li><a href="/regist">회원가입</a></li>
                     </ul>
                     <nav>
-                        <ul class="gnb clear">
-                            <!-- <li>
+                        <ul class="gnb clear" id="hidden_menu">
+                            <li>
                                 <a href="#" class="openAll1">여행정보</a>
                                 <div class="gnb_depth gnb_depth2_1">
                                     <ul class="submenu_list">
@@ -41,7 +41,7 @@
                                         <li><a href="#">해외</a></li>
                                     </ul>
                                 </div>
-                            </li> -->
+                            </li>
                             <li>
                                 <a href="./board/program.html" class="openAll3">상품투어</a>
                                 <div class="gnb_depth gnb_depth2_3">
@@ -81,34 +81,48 @@
         <div id="container">
             <!-- pc 롤링 -->
                 <div class="main_rolling_pc">
-                    <div class="visualRoll">
-                        <ul class="viewImgList">
-                            <li class="imglist0">
-                                <div class="roll_content">
-                                    <a href="./board/program.html"><img src="img_slidecontents01.png" alt="여행정보"></a><p class="roll_txtline">BE TOURIST FOR BETTER LIFE</p>
+                    <div class="slide_box">
+                        <div class="slider">
+                            <div class="slides">
+                                <input type="radio" name="radio-btn" id="radio1">
+                                <input type="radio" name="radio-btn" id="radio2">
+                                <input type="radio" name="radio-btn" id="radio3">
+                                <input type="radio" name="radio-btn" id="radio4">
+                                
+                                <div class="slide first">
+                                    <img src="mainslide01.jpg" alt="">
                                 </div>
-                            </li>
-                            <li class="imglist1">
-                                <div class="roll_content">
-                                    <a href="./board/program.html"><img src="img_slidecontents02.png" alt="여행정보"></a><p class="roll_txtline">BE TOURIST FOR BETTER LIFE</p>
+                                
+                                <div class="slide">
+                                    <img src="mainslide02.jpg" alt="">
                                 </div>
-                            </li>
-                            <li class="imglist2">
-                                <div class="roll_content">
-                                    <a href="./board/program.html"><img src="img_slidecontents03.png" alt="여행정보"></a><p class="roll_txtline">BE TOURIST FOR BETTER LIFE</p>
+                                
+                                <div class="slide">
+                                    <img src="mainslide03.jpg" alt="">
                                 </div>
-                            </li>
-                        </ul>
-                        <div class="rollbtnArea">
-                            <ul class="rollingbtn">
-                                <li class="seq butt0"><a href="#butt"><img src="btn_rollbutt_on.png" alt="1번"></a></li>
-                                <li class="seq butt1"><a href="#butt"><img src="btn_rollbutt_off.png" alt="2번"></a></li>
-                                <li class="seq butt2"><a href="#butt"><img src="btn_rollbutt_off.png" alt="3번"></a></li>
-                                <li class="stop"><a href="#" class="stop"><img src="btn_roll_stop.png" alt="멈춤"></a></li>
-                                <li class="play"><a href="#" class="play"><img src="btn_roll_play.png" alt="재생"></a></li>
-                            </ul>
+                                
+                                <div class="slide">      
+                                    <img src="mainslide01.jpg" alt="">
+                                </div>
+                  
+                                <div class="navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    <div class="auto-btn4"></div>
+                                </div>
+                            </div>
+                  
+                            <div class="navigation-manual">
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                                <label for="radio4" class="manual-btn"></label>
+                            </div>
                         </div>
-                    </div>
+
+                        
+            </div>
                 </div>
             <!-- pc 롤링 끝-->
             <!-- mobile 롤링 -->
@@ -134,9 +148,16 @@
                 <h2>다시 찾는 인기 여행지 <b>TOP 3</b></h2>
                 <div class="about_box">
                     <ul class="place_list box_inner clear">
-                        <li><a href="./board/program.html"><img src="img_topplace01.jpg" alt="성패트릭 대성당" class="img_topplace"></a><h3>성패트릭 대성당</h3><p class="txt">바쁜 뉴욕 안에서 정교하면서도 웅장한 기운에 침묵하게 되는 기도의 시간!</p><span class="view">VIEW</span></li>
-                        <li><a href="./board/program.html"><img src="img_topplace02.jpg" alt="원주 뮤지엄 산" class="img_topplace"></a><h3>원주 뮤지엄 산</h3><p class="txt">전시된 유산들을 담아낸 건물에 신비로운 돌과 테마가 담겨져 있다.</p><span class="view">VIEW</span></li>
-                        <li><a href="./board/program.html"><img src="img_topplace03.jpg" alt="일본 만국박람회 기념공원" class="img_topplace"></a><h3>일본 만국박람회 기념공원</h3><p class="txt">오사카 센리 반파쿠에는 드넓은 대지에 정원과 들, 물과 함께하는 문화가 있다.</p><span class="view">VIEW</span></li>
+                        <li><img src="img_topplace01.jpg" alt="성패트릭 대성당" class="img_topplace topspot1"><h3>성패트릭 대성당</h3><p class="txt">바쁜 뉴욕 안에서 정교하면서도 웅장한 기운에 침묵하게 되는 기도의 시간!</p><span class="view">VIEW</span></li>
+                        
+                        <li><img src="img_topplace02.jpg" alt="원주 뮤지엄 산" class="img_topplace topspot2"><h3>원주 뮤지엄 산</h3><p class="txt">전시된 유산들을 담아낸 건물에 신비로운 돌과 테마가 담겨져 있다.</p><span class="view">VIEW</span></li>
+                     
+                        <li><img src="img_topplace03.jpg" alt="일본 만국박람회 기념공원" class="img_topplace topspot3"><h3>일본 만국박람회 기념공원</h3><p class="txt">오사카 센리 반파쿠에는 드넓은 대지에 정원과 들, 물과 함께하는 문화가 있다.</p><span class="view">VIEW</span></li>
+                        <div class="modal">
+                            <span class="close">Close</span>
+                            <img class="modalImage" id="img01" />
+                            
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -195,4 +216,58 @@
         </div>
     <!-- quick list 끝 -->
 </body>
+<script>
+    var counter = 1;
+        setInterval(function(){
+        document.getElementById('radio'+counter).checked = true;
+        counter++;
+        if(counter > 4)
+            counter = 1;
+    }, 3000)
+                        
+</script>
+
+<script>
+
+var modalEle = document.querySelector(".modal");
+var modalImage = document.querySelector(".modalImage");
+Array.from(document.querySelectorAll(".img_topplace")).forEach(item => {
+   item.addEventListener("click", event => {
+      modalEle.style.display = "block";
+      modalImage.src = event.target.src;
+   });
+});
+document.querySelector(".close").addEventListener("click", () => {
+   modalEle.style.display = "none";
+});
+    
+/*
+    img2.addEventListener('click', ()=>{
+    modalDisplay("block");
+    modal_img2.src = img2.src;
+    });
+    span.addEventListener('click', ()=>{
+    modalDisplay("none");
+    });
+    modal2.addEventListener('click', ()=>{
+    modalDisplay("none");
+    });
+    function modalDisplay(text){
+    modal2.style.display = text;
+    }
+
+    img3.addEventListener('click', ()=>{
+    modalDisplay("block");
+    modal_img3.src = img3.src;
+    });
+    span.addEventListener('click', ()=>{
+    modalDisplay("none");
+    });
+    modal3.addEventListener('click', ()=>{
+    modalDisplay("none");
+    });
+    function modalDisplay(text){
+    modal3.style.display = text;
+    }*/
+</script>
 </html>
