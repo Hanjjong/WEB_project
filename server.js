@@ -50,6 +50,7 @@ app.get('/notice_list.html', function(req, res){
   res.sendFile(__dirname+'/views/notice_list.html');
 });
 
+
 /*
 app.get('/notice_list.html', function(req, res){
   res.render('notice_list.html');
